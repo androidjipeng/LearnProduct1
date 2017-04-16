@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:fitsSystemWindows="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@color/bg"
+                  android:fitsSystemWindows="true"
+                  android:orientation="vertical">
+
+        <!-- 内容 -->
+
+        <FrameLayout
+                android:id="@+id/fl_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+        <View style="@style/line_horizontal_style"/>
+
+        <!-- 底部RadioGroup -->
+
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+        <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+            <RadioButton
+                    android:id="@+id/rb_home"
+                    style="@style/tab_main_style"
+                    android:drawableTop="@drawable/ic_home_selector"
+                    android:text="首页"/>
+
+            <RadioButton
+                    android:id="@+id/rb_circle"
+                    style="@style/tab_main_style"
+                    android:drawableTop="@drawable/ic_circle_selector"
+                    android:text="圈中宝"/>
+
+            <RadioButton
+                    android:id="@+id/rb_cart"
+                    style="@style/tab_main_style"
+                    android:drawableTop="@drawable/ic_cart_selector"
+                    android:text="购物车"/>
+
+            <RadioButton
+                    android:id="@+id/rb_mine"
+                    style="@style/tab_main_style"
+                    android:drawableTop="@drawable/ic_mine_selector"
+                    android:text="我的"/>
+        </RadioGroup>
+
+
+
+
+            <TextView
+                    android:id="@+id/tv_unread_show_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="right"
+                    android:visibility="gone"
+                    android:background="@drawable/em_unread_dot"  />
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

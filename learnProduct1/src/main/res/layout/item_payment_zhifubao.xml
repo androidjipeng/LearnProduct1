@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_zhifubao"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="16dp" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_payment_zhifubao" />
+
+    <TextView
+        style="@style/add_address_info_style"
+        android:background="@color/transparent"
+        android:text="支付宝支付"
+        android:textColor="#57504c" />
+
+    <CheckBox
+        android:id="@+id/cb_zhifubao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:background="@null"
+        android:button="@drawable/bg_pay_check_box_selector"
+        android:checked="false"
+        android:clickable="false"
+        android:focusable="false" />
+
+</LinearLayout>

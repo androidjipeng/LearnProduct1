@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_corners"
+    android:layout_marginTop="@dimen/default_layout_padding_big"
+    android:layout_marginLeft="@dimen/default_layout_padding_medium"
+    android:layout_marginRight="@dimen/default_layout_padding_medium"
+    android:visibility="gone"
+    android:id="@+id/ll_activity_over_information"
+    android:orientation="vertical">
+
+    <View style="@style/divider_horizontal_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_layout_padding_big"
+            android:gravity="center"
+            android:text="本期已结束"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_not_award"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_layout_padding_big"
+            android:text="很遗憾，您未中奖，您可以以7折购买此商品"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_daze_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/default_layout_padding_big"
+            android:background="@drawable/default_now_lelegou_red"
+            android:text="¥:48.52,立即购买"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_round_informa"
+        android:layout_marginTop="@dimen/default_layout_padding_big"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_times_ing"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/default_layout_padding_big"
+            android:text="第三期 正在进行..."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_look_information"
+            android:textColor="@color/white"
+            android:text="查看详情"
+            android:textSize="@dimen/default_textview_medium"
+            android:layout_margin="@dimen/default_layout_padding_medium"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/default_now_lelegou_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

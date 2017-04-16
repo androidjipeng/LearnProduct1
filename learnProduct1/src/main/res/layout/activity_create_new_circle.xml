@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_title_bar" />
+
+    <LinearLayout
+        style="@style/linear_item_style"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <TextView
+            style="@style/add_address_tv_style"
+            android:text="圈子人数"
+            android:textColor="#57504c" />
+
+        <com.wangyi.lelegou.maofengqi.view.CustomClearEditText
+            android:id="@+id/et_circle_number"
+            style="@style/add_address_info_style"
+            android:hint="输入需要加入的人次"
+            android:inputType="number"
+            android:textColor="#57504c" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bg" />
+
+    <LinearLayout
+        android:id="@+id/rl_select_product"
+        style="@style/linear_item_style"
+        android:background="@color/white"
+        android:paddingLeft="16dp"
+        android:paddingRight="3dp" >
+
+        <TextView
+            style="@style/add_address_tv_style"
+            android:text="选择宝贝"
+            android:textColor="#57504c" />
+
+        <TextView
+            android:id="@+id/tv_product_name"
+            style="@style/add_address_info_style"
+            android:background="@color/transparent"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/ic_arrow"
+            android:maxLines="2"
+            android:singleLine="false"
+            android:textColor="#57504c" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp" >
+
+        <TextView
+            android:id="@+id/tv_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="商品价格：¥ 0.00"
+            android:textColor="@color/bg_common_red_color"
+            android:textSize="@dimen/h4" />
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        android:button="@drawable/bg_check_box_selector"
+        android:checked="false"
+        android:visibility="gone"
+        android:text="圈外是否可见"
+        android:textColor="#57504c"
+        android:textSize="12sp" />
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="@drawable/white_corners"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+        >
+    <LinearLayout
+            android:id="@+id/area_main_center_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="7dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                >
+            <TextView
+                    style="@style/common_single_tv"
+                    android:text="下载提示"/>
+
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+                <TextView
+                        android:id="@+id/tv_dlg_update_info"
+                        android:text="正在努力下载中..."
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/bg_black_default_night"
+                        android:textSize="@dimen/h5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+            </FrameLayout>
+
+            <ProgressBar
+                    android:id="@+id/pb_dlg_update_show"
+                    style="@style/pb_style"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="8dp"
+                    android:max="100"
+                    android:progress="0"/>
+
+            <TextView
+                    android:id="@+id/tv_dlg_update_show"
+                    style="@style/common_single_tv"
+                    android:layout_marginTop="8dp"
+                    android:textSize="@dimen/h6"
+                    android:textColor="@color/bg_black_default_night"
+                    android:text="0MB/0MB"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray"
+            ></View>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <TextView
+                android:id="@+id/btn_confirm_dlg_cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="取消下载"
+                android:textSize="16sp"
+                android:textColor="#1675BD"
+                android:padding="10dp"
+                android:gravity="center"
+                android:background="@drawable/bg_common_selector"
+                ></TextView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ================================================================= -->
+    <string name="tab_home">首页</string>
+    <string name="all_product">所有商品</string>
+    <string name="latest_announcement">最新揭晓</string>
+    <string name="the_sun">晒单</string>
+    <string name="time_limit">限时</string>
+
+    <!-- ================================================================= -->
+    <string name="search_product">搜索商品</string>
+    <string name="history_record">历史搜索</string>
+    <string name="clear">清空</string>
+
+    <!-- ================================================================= -->
+    <string name="login">登录</string>
+    <string name="password">密码</string>
+    <string name="forget_password">忘记密码?</string>
+    <string name="register_by_phone_number">通过手机号注册</string>
+    <string name="third_login">或用以下方式登录</string>
+    <string name="wexin_login">微信登录</string>
+    <string name="qq_login">QQ登录</string>
+    <string name="sina_login">新浪登录</string>
+    <string name="service_agreement">服务协议</string>
+
+    <!-- ================================================================= -->
+    <string name="register">注册</string>
+    <string name="code">验证码</string>
+    <string name="send_code">发送验证码</string>
+
+    <!-- ================================================================= -->
+    <string name="update_password">修改密码</string>
+
+    <!-- ================================================================= -->
+    <string name="personal_data">个人资料</string>
+    <string name="head">头像</string>
+    <string name="id">ID</string>
+    <string name="nick_name">昵称</string>
+    <string name="phone_number">手机号码</string>
+    <string name="address_manager">地址管理</string>
+
+    <!-- ================================================================= -->
+    <string name="update_nick_name">修改昵称</string>
+    <string name="update_phone_number">修改手机号码</string>
+
+    <!-- ================================================================= -->
+    <string name="add">添加</string>
+    <string name="add_address">添加地址</string>
+    <string name="edit_address">编辑地址</string>
+    <string name="save">保存</string>
+
+    <!-- ================================================================= -->
+    <string name="consignee">收货人</string>
+    <!-- <string name="phone_number">手机号码</string> -->
+    <string name="province">省份</string>
+    <string name="city">城市</string>
+    <string name="district">地区</string>
+    <string name="address">详细地址</string>
+    <string name="is_default">设为默认地址</string>
+    <string name="delete_address">删除该地址</string>
+
+    <!-- ================================================================= -->
+    <string name="shai_dan">晒单</string>
+    <string name="shai_dan_hint">请输入评论内容</string>
+
+</resources>

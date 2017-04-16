@@ -1,0 +1,141 @@
+<com.learn.soft.product.widget.InterceptLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title_second"
+        android:background="@color/bg_white_item"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_0"
+            style="@style/all_product_btn_style"
+            android:drawableRight="@drawable/ic_arrow_down"
+            android:text="全部" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:background="@color/black_light" />
+
+        <RadioButton
+            android:id="@+id/rb_1"
+            style="@style/all_product_btn_style"
+            android:text="即将揭晓" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:background="@color/black_light" />
+
+        <RadioButton
+            android:id="@+id/rb_2"
+            style="@style/all_product_btn_style"
+            android:text="人气" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:background="@color/black_light" />
+
+        <RadioButton
+            android:id="@+id/rb_3"
+            style="@style/all_product_btn_style"
+            android:text="最新" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:background="@color/black_light" />
+
+        <RadioButton
+            android:id="@+id/rb_4"
+            style="@style/all_product_btn_style"
+            android:text="价格" />
+    </RadioGroup>
+
+    <View
+        android:id="@+id/tab_view"
+        android:layout_width="20dp"
+        android:layout_height="2dp"
+        android:background="@color/bg_common_orange_red" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title_second"
+        android:background="@color/bg_white_item"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_show_select_type_product"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_common_selector"
+            android:drawableRight="@drawable/ic_arrow_down"
+            android:ems="5"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="全部"
+            android:textColor="@color/indicator_default_title_color"
+            android:textSize="@dimen/h4" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:background="@color/black_light" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <com.learn.soft.product.widget.PagerSlidingTabTitle
+                android:id="@+id/psts_tab_allproduct_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_title_second"
+                android:background="@color/bg_white_item"
+                app:pstsDefaultColor="@color/indicator_default_title_color"
+                app:pstsDividerColor="@color/black_light"
+                app:pstsIndicatorColor="@color/bg_common_red_color"
+                app:pstsIndicatorHeight="2dp"
+                app:pstsSelectColor="@color/bg_common_red_color"
+                app:pstsShouldExpand="true"
+                app:pstsTabPaddingLeftRight="0dp"
+                app:pstsTabTextSize="@dimen/h4"
+                app:pstsTextAllCaps="false"
+                app:pstsUnderlineColor="@color/bg_common_red_color"
+                app:pstsUnderlineHeight="0dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#33000000"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="亲，购买该商品，如果您未中奖，可以在该期揭晓结果中，以优惠的价格直接购买哦！"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <com.wangyi.lelegou.maofengqi.view.NoCacheViewPager
+        android:id="@+id/vp_show_tab_allproduct"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" />
+
+</com.learn.soft.product.widget.InterceptLinearLayout>

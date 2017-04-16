@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_title_bar" />
+
+    <com.learn.soft.product.widget.pulltorefresh.PullToRefreshScrollView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/refresh_view"
+        style="@style/PullToRefreshCommon"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrDrawable="@drawable/default_ptr_flip"
+        ptr:ptrHeaderTextAppearance="@style/TextWidgetPullAction"
+        ptr:ptrMode="pullFromStart"
+        ptr:ptrShowIndicator="false"
+        ptr:ptrSubHeaderTextAppearance="@style/TextWidgetPullAction" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_gray_white_color"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dip"
+                android:orientation="vertical" >
+
+                <com.learn.soft.product.widget.adview.AdViewFlow
+                    android:id="@+id/ad_view_flow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@color/transparent"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/h4" />
+
+                    <com.learn.soft.product.widget.adview.CircleFlowIndicator
+                        android:id="@+id/circle_flow_indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:padding="2dip"
+                        android:visibility="gone"
+                        app:activeColor="@color/bg_common_red_color"
+                        app:activeType="fill"
+                        app:circleSeparation="20dip"
+                        app:inactiveColor="@color/white"
+                        app:inactiveType="fill"
+                        app:radius="4dip" />
+                </FrameLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingTop="24dp" >
+
+                <TextView
+                    android:id="@+id/tv_all_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="11dp"
+                    android:drawableTop="@drawable/ic_home_all_product"
+                    android:gravity="center"
+                    android:text="所有商品"
+                    android:textColor="@color/gray"
+                    android:textSize="13sp" />
+
+                <FrameLayout android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_weight="1">
+
+                    <TextView
+                            android:id="@+id/tv_circle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="11dp"
+                            android:drawableTop="@drawable/ic_home_circle"
+                            android:gravity="center"
+                            android:text="圈中宝"
+                            android:textColor="@color/gray"
+                            android:textSize="13sp" />
+
+                    <ImageView
+                            android:layout_gravity="right"
+                            android:layout_marginRight="8dp"
+                            android:src="@drawable/ic_show_btn_hot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="11dp"
+                    android:drawableTop="@drawable/ic_home_new"
+                    android:gravity="center"
+                    android:text="最新揭晓"
+                    android:textColor="@color/gray"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_shaidan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="11dp"
+                    android:drawableTop="@drawable/ic_home_shaidan"
+                    android:gravity="center"
+                    android:text="晒单"
+                    android:textColor="@color/gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_notice"
+                    android:drawablePadding="5dp"
+                    android:singleLine="true"
+                    android:text="恭喜"
+                    android:textColor="@color/gray2"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/parse_first"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/gray2"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/gray2"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_hot"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_home_hot"
+                        android:drawablePadding="3dp"
+                        android:text="热门推荐"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/h4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:drawablePadding="3dp"
+                        android:drawableRight="@drawable/ic_triangle"
+                        android:text="更多"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/h4" />
+                </RelativeLayout>
+
+                <com.learn.soft.product.widget.MyGridView
+                    android:id="@+id/mgv_hot"
+                    style="@style/PullToRefreshCommon"
+                    android:horizontalSpacing="0.5dip"
+                    android:listSelector="@color/transparent"
+                    android:numColumns="2"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="0.5dip" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_home_hot"
+                        android:drawablePadding="3dp"
+                        android:text="二人专区"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/h4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:drawablePadding="3dp"
+                        android:drawableRight="@drawable/ic_triangle"
+                        android:text="更多"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/h4" />
+                </RelativeLayout>
+
+                <com.learn.soft.product.widget.MyGridView
+                    android:id="@+id/mgv_two"
+                    style="@style/PullToRefreshCommon"
+                    android:horizontalSpacing="0.5dip"
+                    android:listSelector="@color/transparent"
+                    android:numColumns="2"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="0.5dip" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_home_hot"
+                        android:drawablePadding="3dp"
+                        android:text="三人专区"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/h4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:drawablePadding="3dp"
+                        android:drawableRight="@drawable/ic_triangle"
+                        android:text="更多"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/h4" />
+                </RelativeLayout>
+
+                <com.learn.soft.product.widget.MyGridView
+                    android:id="@+id/mgv_three"
+                    style="@style/PullToRefreshCommon"
+                    android:horizontalSpacing="0.5dip"
+                    android:listSelector="@color/transparent"
+                    android:numColumns="2"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="0.5dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.learn.soft.product.widget.pulltorefresh.PullToRefreshScrollView>
+
+</LinearLayout>

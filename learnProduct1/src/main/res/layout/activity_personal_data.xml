@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/layout_head"
+        style="@style/linear_item_style.clickable"
+        android:layout_height="80dp" >
+
+        <TextView
+            style="@style/linear_item_tv_style"
+            android:text="@string/head" />
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@null"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            style="@style/linear_item_img_style"
+            android:contentDescription="@null" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line" />
+
+    <LinearLayout style="@style/linear_item_style" >
+
+        <TextView
+            style="@style/linear_item_tv_style"
+            android:text="@string/id" />
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF999999"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:id="@+id/layout_nick_name"
+        style="@style/linear_item_style.clickable" >
+
+        <TextView
+            style="@style/linear_item_tv_style"
+            android:text="@string/nick_name" />
+
+        <TextView
+            android:id="@+id/tv_nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            style="@style/linear_item_img_style"
+            android:contentDescription="@null" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:id="@+id/layout_phone_number"
+        style="@style/linear_item_style.clickable" >
+
+        <TextView
+            style="@style/linear_item_tv_style"
+            android:text="@string/phone_number" />
+
+        <TextView
+            android:id="@+id/tv_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            style="@style/linear_item_img_style"
+            android:contentDescription="@null" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:id="@+id/layout_address_manager"
+        style="@style/linear_item_style.clickable" >
+
+        <TextView
+            style="@style/linear_item_tv_style"
+            android:text="@string/address_manager" />
+
+        <TextView
+            android:id="@+id/addressManager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            style="@style/linear_item_img_style"
+            android:contentDescription="@null" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line" />
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:id="@+id/area_history_info_item"
+            android:background="@drawable/bg_common_selector"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <FrameLayout
+                android:layout_width="60dp"
+                android:layout_height="match_parent">
+            <View
+                    android:background="@color/divider_color"
+                    android:layout_width="1dp"
+                    android:layout_gravity="center"
+                    android:layout_height="match_parent" />
+            <com.learn.soft.product.widget.CircleImageView
+                    android:id="@+id/iv_history_info_item_userpic"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center_horizontal"
+                    app:border_width="1dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    app:border_color="@color/white"
+                    android:src="@drawable/ic_user_head"/>
+        </FrameLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:background="@drawable/white_corners"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:id="@+id/tv_history_info_item_title"
+                    android:text=""
+                    android:textSize="@dimen/h4"
+                    android:textColor="@color/black_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/tv_history_info_item_info"
+                    android:text=""
+                    android:layout_marginTop="5dp"
+                    android:textSize="@dimen/h5"
+                    android:textColor="@color/black_light_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            <ImageView
+                    android:id="@+id/iv_history_info_item_pic"
+                    android:src="@drawable/ic_no_loading_default"
+                    android:minHeight="120dp"
+                    android:minWidth="150dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:id="@+id/tv_history_info_item_love"
+                        android:text="0人羡慕嫉妒"
+                        android:textSize="@dimen/h6"
+                        android:drawableLeft="@drawable/ic_history_love"
+                        android:textColor="@color/black_light_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:id="@+id/tv_history_info_item_comment"
+                        android:text="0条评论"
+                        android:textSize="@dimen/h6"
+                        android:layout_marginLeft="5dp"
+                        android:drawableLeft="@drawable/ic_history_comment"
+                        android:textColor="@color/black_light_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+

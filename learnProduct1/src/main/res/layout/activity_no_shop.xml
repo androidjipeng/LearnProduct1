@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wangyi.lelegou.maofengqi.ui.activity.ShoppingflowActivity.NoShopActivity">
+    <include layout="@layout/layout_title_bar"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/wrong_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="@dimen/default_layout_padding_big"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="商品不存在"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_title_bar" />
+
+    <LinearLayout
+        style="@style/linear_item_style"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <TextView
+            style="@style/add_address_tv_style"
+            android:text="圈子人数"
+            android:textColor="#57504c" />
+
+        <TextView
+            android:id="@+id/tv_circle_number"
+            style="@style/add_address_info_style"
+            android:layout_width="wrap_content"
+            android:layout_weight="0"
+            android:text="20"
+            android:textColor="@color/bg_common_orange_red" />
+
+        <TextView
+            style="@style/add_address_info_style"
+            android:text="人"
+            android:textColor="#57504c" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bg" />
+
+    <LinearLayout
+        style="@style/linear_item_style"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <TextView
+            style="@style/add_address_tv_style"
+            android:text="圈子宝贝"
+            android:textColor="#57504c" />
+
+        <TextView
+            android:id="@+id/tv_product_name"
+            style="@style/add_address_info_style"
+            android:maxLines="2"
+            android:singleLine="false"
+            android:textColor="#57504c" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp" >
+
+        <TextView
+            android:id="@+id/tv_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textColor="#fe7c25"
+            android:textSize="11sp" />
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        android:button="@drawable/bg_check_box_selector"
+        android:checked="false"
+        android:clickable="false"
+        android:paddingStart="5dp"
+        android:text="圈外是否可见"
+        android:textColor="#57504c"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        style="@style/linear_item_style"
+        android:paddingLeft="11dp"
+        android:paddingRight="11dp" >
+
+        <TextView
+            android:id="@+id/tv_balance"
+            style="@style/add_address_info_style"
+            android:text=""
+            android:textColor="#57504c" />
+
+        <TextView
+            android:id="@+id/tv_recharge"
+            android:layout_width="50dp"
+            android:layout_height="24dp"
+            android:background="@drawable/bg_recharge_radius"
+            android:gravity="center"
+            android:text="充值"
+            android:textColor="@color/bg_common_orange_red"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        layout="@layout/item_payment_zhifubao" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        layout="@layout/item_payment_weixin" />
+
+    <TextView
+        android:id="@+id/tv_payment"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_payment"
+        android:gravity="center"
+        android:text="支付"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

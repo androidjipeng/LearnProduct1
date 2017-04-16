@@ -1,0 +1,13 @@
+package com.wangyi.lelegou.maofengqi.utils;
+
+public class Constant2 {
+	
+	 public static final String appid = "3008870986";
+	 public static final String privateKey = "MIICXAIBAAKBgQCNEY3g3cS/waQMbIR+pnvXzor/0x4gkuuEG76XehT+MbxuyS+zecQBkt5IGneXRNuUV9AGwdKDamVtQ0sU1BPSYSjP83S7wP2v1TyLh4IkuvSGs0gDLk+xQIllAs7tTpJjSQPdfKdM5IQCz+SfvJTsYCTX9znlyycj2OOcm1UCzQIDAQABAoGAIbiag7A/gd8WCeo+2c+ONw4mZ/TddMfqCJBhRPBn6EOXWZw6DNsEoaOsAuxgvgY1vwYmshbO7Z8XU8EMR5RSkFJwlAq3jlawmIgORtqTUB94QC5Y3tbvCGW4QAaipOqxGDbeYWsa/GFdFhxiJfEi4pwACn3b0Y3MVK6/SmkbDUECQQDQUic8kmw101mtulv2ILvZPVWfX4LvIeOtafTrvs/A2HBfElqXS1emO6nmdIIgyC4jEVO9+aUas+txgPzzAahpAkEArVr7R//vrr22p4L87d5XrZTQ0ZyHLbqLL0z35ywqBDMFk3TbRvEYb7T1gEuBmGMmpNTsBinf/R/fbNf3d93axQJAQ9RsGCno+AGwMoP6i4KPB6YT6ge0X16efomAiP4hMT6IIDyeqKKMkIDeyj3nXPsxIpPyu2m825v3roZ8VjeU+QJBAJUH02CpeU9bDyzhIjoIXI4AkqixDVFVvpRScgiN4i0sA84ptt09JYnbIvdBck8kZjNsTOBbnZFJllVHMRseYhUCQDJhZrTgYcAP/VAN4m7/ljFaMAHOBmKAS6dy0gflQo6BKCpV3QYvmqswi3aAJBZvvkl2FOsog10UUn7zIQ0Bk8g=" ;
+	 public static final String publicKey="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCZ8L6bkVc6EBrtwUzOSiXZNYsIVTm1yktj8a6NqyjKH7eQSICfpkmqa12ZFIVF6IerGd1oFNL6/lb0N+Tk/pT6DXhq0/x1bHvUVd8aGY/z/uku4liY2xy9oYYGsOQRv3pt/l6/wUFFv5sfH3n2q5dB4ndEggmbeD9nEIdzrX3JXwIDAQAB";
+	 public static final String notifyurl = "http://91lelegou.com";
+	
+	public static final String wxappid = "wxfaf120a5bc0a0c9d";
+	
+	// com.learn.soft.product2
+}

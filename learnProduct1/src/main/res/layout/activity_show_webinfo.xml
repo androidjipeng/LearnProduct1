@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:background="@color/bg_gray_white_color"
+              android:orientation="vertical">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <com.learn.soft.product.widget.ObservableWebView
+                        android:id="@+id/wv_main_show"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+            </LinearLayout>
+
+            <ProgressBar
+                    android:id="@+id/pb_show_webinfo"
+                    android:layout_gravity="bottom"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:progressDrawable="@drawable/progress_bg"
+                    android:layout_height="4dp" />
+
+            <!--<ImageView
+                    android:id="@+id/btn_go_back"
+                    android:background="@drawable/bg_common_selector"
+                    android:layout_margin="3dp"
+                    android:layout_width="65dp"
+                    android:layout_height="40dp"/>-->
+
+            <FrameLayout
+                    android:background="@color/bg_common_red_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_top_bar">
+                <ImageView
+                        android:id="@+id/btn_head_go_back"
+                        android:src="@drawable/ic_btn_back_new_white"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/bg_common_selector"
+                        android:padding="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"/>
+
+                <TextView
+                        android:id="@+id/tv_head_title"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/h3"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                <FrameLayout
+                        android:layout_marginRight="5dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    <ImageView
+                            android:id="@+id/btn_login_out"
+                            android:visibility="gone"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_btn_login_out"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"/>
+                    <ImageView
+                            android:id="@+id/area_show_calResult"
+                            android:visibility="gone"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_btn_go_jisuan_dlg"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"/>
+                    <ImageView
+                            android:id="@+id/area_show_zhmx"
+                            android:visibility="gone"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_btn_go_zhmx_dlg2"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"/>
+                    <FrameLayout
+                            android:id="@+id/area_show_buy_content"
+                            android:layout_marginLeft="5dp"
+                            android:visibility="gone"
+                            android:background="@drawable/bg_common_selector"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                        <ImageView
+                                android:src="@drawable/ic_head_buy"
+                                android:padding="8dp"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"/>
+                        <TextView
+                                android:id="@+id/tv_head_buy_number"
+                                android:text="0"
+                                android:paddingLeft="2dp"
+                                android:paddingRight="2dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_gravity="right"
+                                android:textSize="8sp"
+                                android:visibility="gone"
+                                android:textColor="@color/white"
+                                android:background="@drawable/corners_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                    </FrameLayout>
+                </FrameLayout>
+            </FrameLayout>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

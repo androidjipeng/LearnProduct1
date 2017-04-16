@@ -1,0 +1,127 @@
+<com.learn.soft.product.widget.InterceptLinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_gray_white_color"
+        android:orientation="vertical">
+
+    <!--<ScrollView
+            android:fillViewport="true"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <View
+                    android:background="@color/bg_gray_white_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp" />
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@color/bg_white_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <ImageView
+                        android:src="@drawable/ic_default_head_old"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"/>
+
+                <LinearLayout
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:id="@+id/tv_mine_show_nickname"
+                            android:textSize="@dimen/h3"
+                            android:textColor="@color/black_light_color"
+                            android:text="修改昵称"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    <TextView
+                            android:id="@+id/tv_mine_show_info"
+                            android:textSize="@dimen/h3"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black_light_color"
+                            android:text="立即登录，享受更多服务。"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                    android:background="@color/bg_gray_white_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp" />
+            <TextView
+                    android:id="@+id/tv_tab_my_item1"
+                    android:text="游戏大厅"
+                    android:drawableLeft="@drawable/ic_tab_my_xtxx"
+                    style="@style/main_tv_my_tab_style"
+                    />
+            <View style="@style/divider_horizontal_style"/>
+            <TextView
+                    android:id="@+id/tv_tab_my_item2"
+                    android:text="我的收藏"
+                    android:drawableLeft="@drawable/ic_tab_my_xtxx"
+                    style="@style/main_tv_my_tab_style"
+                    />
+
+            <View
+                    android:background="@color/bg_gray_white_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp" />
+
+            <TextView
+                    android:id="@+id/tv_tab_my_item3"
+                    android:text="任务记录"
+                    style="@style/main_tv_my_tab_style"
+                    />
+            <View style="@style/divider_horizontal_style"/>
+            <TextView
+                    android:id="@+id/tv_tab_my_item4"
+                    android:text="兑换记录"
+                    style="@style/main_tv_my_tab_style"
+                    />
+            <View style="@style/divider_horizontal_style"/>
+            <TextView
+                    android:id="@+id/tv_tab_my_item5"
+                    android:text="礼包记录"
+                    style="@style/main_tv_my_tab_style"
+                    />
+            <View style="@style/divider_horizontal_style"/>
+
+            <View
+                    android:background="@color/bg_gray_white_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp" />
+
+            <TextView
+                    android:id="@+id/tv_tab_my_item6"
+                    android:text="清除缓存"
+                    style="@style/main_tv_my_tab_style"
+                    />
+            <View style="@style/divider_horizontal_style"/>
+
+            <Button
+                    android:id="@+id/btn_login_status"
+                    android:layout_margin="10dp"
+                    android:text="登录"
+                    style="@style/btn_common_red_style"
+                    />
+        </LinearLayout>
+
+
+    </ScrollView>-->
+
+</com.learn.soft.product.widget.InterceptLinearLayout>

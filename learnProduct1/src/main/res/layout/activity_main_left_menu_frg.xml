@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_gray_white_color"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:background="@color/bg_common_red_color"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <com.learn.soft.product.widget.CircleImageView
+                    android:id="@+id/civ_tab_my_image"
+                    android:layout_marginTop="35dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:border_width="4dp"
+                    app:border_color="@color/transparent3"
+                    android:src="@drawable/ic_default_head_old"/>
+
+            <TextView
+                    android:id="@+id/tv_login_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:text="未登錄"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:background="@drawable/white_transparent_circle_corners"
+                    android:textColor="@color/black_light"
+                    android:textSize="@dimen/h3"/>
+
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+            <View style="@style/divider_horizontal_style" />
+            <com.soft.happy.sdkwelfare.main.widget.MarqueeTextView
+                    android:text="歡迎你的到來，更多精彩很快更新，趕緊加入吧。"
+                    android:textColor="@color/black_light_color"
+                    android:textSize="@dimen/h4"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            <View style="@style/divider_horizontal_style" />
+
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/tv_tab_my_item3"
+                        android:text="任务记录"
+                        style="@style/main_tv_my_tab_style"
+                        />
+                <View style="@style/divider_horizontal_style"/>
+                <TextView
+                        android:id="@+id/tv_tab_my_item4"
+                        android:text="兑换记录"
+                        style="@style/main_tv_my_tab_style"
+                        />
+                <View style="@style/divider_horizontal_style"/>
+                <TextView
+                        android:id="@+id/tv_tab_my_item5"
+                        android:text="礼包记录"
+                        style="@style/main_tv_my_tab_style"
+                        />
+                <View style="@style/divider_horizontal_style"/>
+
+                <View
+                        android:background="@color/bg_gray_white_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="6dp" />
+
+                <TextView
+                        android:id="@+id/tv_tab_my_item6"
+                        android:text="清除缓存"
+                        style="@style/main_tv_my_tab_style"
+                        />
+                <View style="@style/divider_horizontal_style"/>
+
+                <Button
+                        android:id="@+id/btn_login_status"
+                        android:layout_margin="10dp"
+                        android:text="登錄"
+                        style="@style/btn_common_red_style"
+                        />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

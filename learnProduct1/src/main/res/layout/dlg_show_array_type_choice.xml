@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_no_corners"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:padding="1dp" >
+
+    <ListView
+        android:id="@+id/lv_front_user_choice_dlg"
+        style="@style/PullToRefreshCommon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"
+        android:listSelector="@color/transparent" >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:arc="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:background="@color/transparent3"
+              android:clipChildren="false"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+
+    <FrameLayout
+            android:clipChildren="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <FrameLayout
+                android:clipChildren="false"
+                android:layout_marginBottom="116.5dp"
+                android:layout_marginTop="116.5dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <com.learn.soft.product.widget.fuckviewpager.FuckViewPager
+                    android:id="@+id/vp_showinfo"
+                    app:offscreenPageLimit="6"
+                    app:pagerMargin="0"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+            </com.learn.soft.product.widget.fuckviewpager.FuckViewPager>
+        </FrameLayout>
+
+
+        <ImageView
+                android:id="@+id/iv_show_close"
+                android:layout_gravity="bottom|center_horizontal"
+                android:src="@drawable/ic_dlg_btn_colse"
+                android:layout_marginBottom="58dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

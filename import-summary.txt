@@ -1,0 +1,348 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From LearnProduct1:
+* .idea\
+* .idea\.name
+* .idea\compiler.xml
+* .idea\copyright\
+* .idea\copyright\profiles_settings.xml
+* .idea\encodings.xml
+* .idea\libraries\
+* .idea\libraries\android_support_v7_appcompat.xml
+* .idea\libraries\android_support_v7_appcompat1.xml
+* .idea\libraries\iapppay_plugin.xml
+* .idea\libraries\iapppay_res.xml
+* .idea\libraries\libs.xml
+* .idea\libraries\libs1.xml
+* .idea\misc.xml
+* .idea\modules.xml
+* .idea\scopes\
+* .idea\scopes\scope_settings.xml
+* .idea\uiDesigner.xml
+* .idea\vcs.xml
+* .idea\workspace.xml
+* LearnProduct1.iml
+* doc\
+* doc\allclasses-frame.html
+* doc\allclasses-noframe.html
+* doc\com\
+* doc\com\wangyi\
+* doc\com\wangyi\lelegou\
+* doc\com\wangyi\lelegou\maofengqi\
+* doc\com\wangyi\lelegou\maofengqi\base\
+* doc\com\wangyi\lelegou\maofengqi\base\BaseActivity.html
+* doc\com\wangyi\lelegou\maofengqi\base\BaseFragment.html
+* doc\com\wangyi\lelegou\maofengqi\base\class-use\
+* doc\com\wangyi\lelegou\maofengqi\base\class-use\BaseActivity.html
+* doc\com\wangyi\lelegou\maofengqi\base\class-use\BaseFragment.html
+* doc\com\wangyi\lelegou\maofengqi\base\package-frame.html
+* doc\com\wangyi\lelegou\maofengqi\base\package-summary.html
+* doc\com\wangyi\lelegou\maofengqi\base\package-tree.html
+* doc\com\wangyi\lelegou\maofengqi\base\package-use.html
+* doc\com\wangyi\lelegou\maofengqi\bean\
+* doc\com\wangyi\lelegou\maofengqi\bean\AddressBean.html
+* doc\com\wangyi\lelegou\maofengqi\bean\CityBean.html
+* doc\com\wangyi\lelegou\maofengqi\bean\CookieBean.html
+* doc\com\wangyi\lelegou\maofengqi\bean\DistrictBean.html
+* doc\com\wangyi\lelegou\maofengqi\bean\HistoryRecordBean.html
+* doc\com\wangyi\lelegou\maofengqi\bean\JsonMsgBean.html
+* doc\com\wangyi\lelegou\maofengqi\bean\NoticeBean.html
+* doc\com\wangyi\lelegou\maofengqi\bean\ProductBean.html
+* doc\com\wangyi\lelegou\maofengqi\bean\ProvinceBean.html
+* doc\com\wangyi\lelegou\maofengqi\bean\ResultBean.html
+* doc\com\wangyi\lelegou\maofengqi\bean\SearchProductBean.html
+* doc\com\wangyi\lelegou\maofengqi\bean\UploadImageBean.html
+* doc\com\wangyi\lelegou\maofengqi\bean\UserBean.html
+* doc\com\wangyi\lelegou\maofengqi\bean\class-use\
+* doc\com\wangyi\lelegou\maofengqi\bean\class-use\AddressBean.html
+* doc\com\wangyi\lelegou\maofengqi\bean\class-use\CityBean.html
+* doc\com\wangyi\lelegou\maofengqi\bean\class-use\CookieBean.html
+* doc\com\wangyi\lelegou\maofengqi\bean\class-use\DistrictBean.html
+* doc\com\wangyi\lelegou\maofengqi\bean\class-use\HistoryRecordBean.html
+* doc\com\wangyi\lelegou\maofengqi\bean\class-use\JsonMsgBean.html
+* doc\com\wangyi\lelegou\maofengqi\bean\class-use\NoticeBean.html
+* doc\com\wangyi\lelegou\maofengqi\bean\class-use\ProductBean.html
+* doc\com\wangyi\lelegou\maofengqi\bean\class-use\ProvinceBean.html
+* doc\com\wangyi\lelegou\maofengqi\bean\class-use\ResultBean.html
+* doc\com\wangyi\lelegou\maofengqi\bean\class-use\SearchProductBean.html
+* doc\com\wangyi\lelegou\maofengqi\bean\class-use\UploadImageBean.html
+* doc\com\wangyi\lelegou\maofengqi\bean\class-use\UserBean.html
+* doc\com\wangyi\lelegou\maofengqi\bean\package-frame.html
+* doc\com\wangyi\lelegou\maofengqi\bean\package-summary.html
+* doc\com\wangyi\lelegou\maofengqi\bean\package-tree.html
+* doc\com\wangyi\lelegou\maofengqi\bean\package-use.html
+* doc\com\wangyi\lelegou\maofengqi\ui\
+* doc\com\wangyi\lelegou\maofengqi\ui\activity\
+* doc\com\wangyi\lelegou\maofengqi\ui\activity\AddressManagerActivity.html
+* doc\com\wangyi\lelegou\maofengqi\ui\activity\EditAddressActivity.html
+* doc\com\wangyi\lelegou\maofengqi\ui\activity\LoginActivity.html
+* doc\com\wangyi\lelegou\maofengqi\ui\activity\PersonalDataActivity.html
+* doc\com\wangyi\lelegou\maofengqi\ui\activity\RegisterActivity.html
+* doc\com\wangyi\lelegou\maofengqi\ui\activity\SearchProductActivity.html
+* doc\com\wangyi\lelegou\maofengqi\ui\activity\ShaiDanActivity.html
+* doc\com\wangyi\lelegou\maofengqi\ui\activity\UpdateNickNameActivity.html
+* doc\com\wangyi\lelegou\maofengqi\ui\activity\UpdatePasswordActivity.html
+* doc\com\wangyi\lelegou\maofengqi\ui\activity\UpdatePhoneNumberActivity.html
+* doc\com\wangyi\lelegou\maofengqi\ui\activity\class-use\
+* doc\com\wangyi\lelegou\maofengqi\ui\activity\class-use\AddressManagerActivity.html
+* doc\com\wangyi\lelegou\maofengqi\ui\activity\class-use\EditAddressActivity.html
+* doc\com\wangyi\lelegou\maofengqi\ui\activity\class-use\LoginActivity.html
+* doc\com\wangyi\lelegou\maofengqi\ui\activity\class-use\PersonalDataActivity.html
+* doc\com\wangyi\lelegou\maofengqi\ui\activity\class-use\RegisterActivity.html
+* doc\com\wangyi\lelegou\maofengqi\ui\activity\class-use\SearchProductActivity.html
+* doc\com\wangyi\lelegou\maofengqi\ui\activity\class-use\ShaiDanActivity.html
+* doc\com\wangyi\lelegou\maofengqi\ui\activity\class-use\UpdateNickNameActivity.html
+* doc\com\wangyi\lelegou\maofengqi\ui\activity\class-use\UpdatePasswordActivity.html
+* doc\com\wangyi\lelegou\maofengqi\ui\activity\class-use\UpdatePhoneNumberActivity.html
+* doc\com\wangyi\lelegou\maofengqi\ui\activity\package-frame.html
+* doc\com\wangyi\lelegou\maofengqi\ui\activity\package-summary.html
+* doc\com\wangyi\lelegou\maofengqi\ui\activity\package-tree.html
+* doc\com\wangyi\lelegou\maofengqi\ui\activity\package-use.html
+* doc\com\wangyi\lelegou\maofengqi\ui\fragment\
+* doc\com\wangyi\lelegou\maofengqi\ui\fragment\ProductListFragment.html
+* doc\com\wangyi\lelegou\maofengqi\ui\fragment\class-use\
+* doc\com\wangyi\lelegou\maofengqi\ui\fragment\class-use\ProductListFragment.html
+* doc\com\wangyi\lelegou\maofengqi\ui\fragment\package-frame.html
+* doc\com\wangyi\lelegou\maofengqi\ui\fragment\package-summary.html
+* doc\com\wangyi\lelegou\maofengqi\ui\fragment\package-tree.html
+* doc\com\wangyi\lelegou\maofengqi\ui\fragment\package-use.html
+* doc\com\wangyi\lelegou\maofengqi\utils\
+* doc\com\wangyi\lelegou\maofengqi\utils\ApiClass.html
+* doc\com\wangyi\lelegou\maofengqi\utils\BitmapUtils.html
+* doc\com\wangyi\lelegou\maofengqi\utils\BundleKey.html
+* doc\com\wangyi\lelegou\maofengqi\utils\Constant.html
+* doc\com\wangyi\lelegou\maofengqi\utils\MD5Utils.html
+* doc\com\wangyi\lelegou\maofengqi\utils\OkHttpUtilsManager.AbsCallback.html
+* doc\com\wangyi\lelegou\maofengqi\utils\OkHttpUtilsManager.BeanCallBack.html
+* doc\com\wangyi\lelegou\maofengqi\utils\OkHttpUtilsManager.html
+* doc\com\wangyi\lelegou\maofengqi\utils\ResultCallback.html
+* doc\com\wangyi\lelegou\maofengqi\utils\SPManager.html
+* doc\com\wangyi\lelegou\maofengqi\utils\ScreenUtils.html
+* doc\com\wangyi\lelegou\maofengqi\utils\StringUtil.html
+* doc\com\wangyi\lelegou\maofengqi\utils\TimeCount.html
+* doc\com\wangyi\lelegou\maofengqi\utils\UtilConversionHelper.html
+* doc\com\wangyi\lelegou\maofengqi\utils\VerificationUtils.html
+* doc\com\wangyi\lelegou\maofengqi\utils\class-use\
+* doc\com\wangyi\lelegou\maofengqi\utils\class-use\ApiClass.html
+* doc\com\wangyi\lelegou\maofengqi\utils\class-use\BitmapUtils.html
+* doc\com\wangyi\lelegou\maofengqi\utils\class-use\BundleKey.html
+* doc\com\wangyi\lelegou\maofengqi\utils\class-use\Constant.html
+* doc\com\wangyi\lelegou\maofengqi\utils\class-use\MD5Utils.html
+* doc\com\wangyi\lelegou\maofengqi\utils\class-use\OkHttpUtilsManager.AbsCallback.html
+* doc\com\wangyi\lelegou\maofengqi\utils\class-use\OkHttpUtilsManager.BeanCallBack.html
+* doc\com\wangyi\lelegou\maofengqi\utils\class-use\OkHttpUtilsManager.html
+* doc\com\wangyi\lelegou\maofengqi\utils\class-use\ResultCallback.html
+* doc\com\wangyi\lelegou\maofengqi\utils\class-use\SPManager.html
+* doc\com\wangyi\lelegou\maofengqi\utils\class-use\ScreenUtils.html
+* doc\com\wangyi\lelegou\maofengqi\utils\class-use\StringUtil.html
+* doc\com\wangyi\lelegou\maofengqi\utils\class-use\TimeCount.html
+* doc\com\wangyi\lelegou\maofengqi\utils\class-use\UtilConversionHelper.html
+* doc\com\wangyi\lelegou\maofengqi\utils\class-use\VerificationUtils.html
+* doc\com\wangyi\lelegou\maofengqi\utils\package-frame.html
+* doc\com\wangyi\lelegou\maofengqi\utils\package-summary.html
+* doc\com\wangyi\lelegou\maofengqi\utils\package-tree.html
+* doc\com\wangyi\lelegou\maofengqi\utils\package-use.html
+* doc\com\wangyi\lelegou\maofengqi\view\
+* doc\com\wangyi\lelegou\maofengqi\view\CustomClearEditText.html
+* doc\com\wangyi\lelegou\maofengqi\view\ILoading.html
+* doc\com\wangyi\lelegou\maofengqi\view\Loading.html
+* doc\com\wangyi\lelegou\maofengqi\view\NoScrollGridView.html
+* doc\com\wangyi\lelegou\maofengqi\view\SyLinearLayoutManager.html
+* doc\com\wangyi\lelegou\maofengqi\view\adapter\
+* doc\com\wangyi\lelegou\maofengqi\view\adapter\CommonAdapter.html
+* doc\com\wangyi\lelegou\maofengqi\view\adapter\RecyclerViewAdapter.OnItemClickListener.html
+* doc\com\wangyi\lelegou\maofengqi\view\adapter\RecyclerViewAdapter.OnItemLongClickListener.html
+* doc\com\wangyi\lelegou\maofengqi\view\adapter\RecyclerViewAdapter.html
+* doc\com\wangyi\lelegou\maofengqi\view\adapter\ViewHolder.html
+* doc\com\wangyi\lelegou\maofengqi\view\adapter\class-use\
+* doc\com\wangyi\lelegou\maofengqi\view\adapter\class-use\CommonAdapter.html
+* doc\com\wangyi\lelegou\maofengqi\view\adapter\class-use\RecyclerViewAdapter.OnItemClickListener.html
+* doc\com\wangyi\lelegou\maofengqi\view\adapter\class-use\RecyclerViewAdapter.OnItemLongClickListener.html
+* doc\com\wangyi\lelegou\maofengqi\view\adapter\class-use\RecyclerViewAdapter.html
+* doc\com\wangyi\lelegou\maofengqi\view\adapter\class-use\ViewHolder.html
+* doc\com\wangyi\lelegou\maofengqi\view\adapter\package-frame.html
+* doc\com\wangyi\lelegou\maofengqi\view\adapter\package-summary.html
+* doc\com\wangyi\lelegou\maofengqi\view\adapter\package-tree.html
+* doc\com\wangyi\lelegou\maofengqi\view\adapter\package-use.html
+* doc\com\wangyi\lelegou\maofengqi\view\class-use\
+* doc\com\wangyi\lelegou\maofengqi\view\class-use\CustomClearEditText.html
+* doc\com\wangyi\lelegou\maofengqi\view\class-use\ILoading.html
+* doc\com\wangyi\lelegou\maofengqi\view\class-use\Loading.html
+* doc\com\wangyi\lelegou\maofengqi\view\class-use\NoScrollGridView.html
+* doc\com\wangyi\lelegou\maofengqi\view\class-use\SyLinearLayoutManager.html
+* doc\com\wangyi\lelegou\maofengqi\view\package-frame.html
+* doc\com\wangyi\lelegou\maofengqi\view\package-summary.html
+* doc\com\wangyi\lelegou\maofengqi\view\package-tree.html
+* doc\com\wangyi\lelegou\maofengqi\view\package-use.html
+* doc\com\wangyi\lelegou\maofengqi\view\recyclerview\
+* doc\com\wangyi\lelegou\maofengqi\view\recyclerview\DividerGridItemDecoration.html
+* doc\com\wangyi\lelegou\maofengqi\view\recyclerview\DividerItemDecoration.html
+* doc\com\wangyi\lelegou\maofengqi\view\recyclerview\class-use\
+* doc\com\wangyi\lelegou\maofengqi\view\recyclerview\class-use\DividerGridItemDecoration.html
+* doc\com\wangyi\lelegou\maofengqi\view\recyclerview\class-use\DividerItemDecoration.html
+* doc\com\wangyi\lelegou\maofengqi\view\recyclerview\package-frame.html
+* doc\com\wangyi\lelegou\maofengqi\view\recyclerview\package-summary.html
+* doc\com\wangyi\lelegou\maofengqi\view\recyclerview\package-tree.html
+* doc\com\wangyi\lelegou\maofengqi\view\recyclerview\package-use.html
+* doc\constant-values.html
+* doc\deprecated-list.html
+* doc\help-doc.html
+* doc\index-files\
+* doc\index-files\index-1.html
+* doc\index-files\index-10.html
+* doc\index-files\index-11.html
+* doc\index-files\index-12.html
+* doc\index-files\index-13.html
+* doc\index-files\index-14.html
+* doc\index-files\index-15.html
+* doc\index-files\index-16.html
+* doc\index-files\index-17.html
+* doc\index-files\index-18.html
+* doc\index-files\index-19.html
+* doc\index-files\index-2.html
+* doc\index-files\index-20.html
+* doc\index-files\index-21.html
+* doc\index-files\index-3.html
+* doc\index-files\index-4.html
+* doc\index-files\index-5.html
+* doc\index-files\index-6.html
+* doc\index-files\index-7.html
+* doc\index-files\index-8.html
+* doc\index-files\index-9.html
+* doc\index.html
+* doc\overview-frame.html
+* doc\overview-summary.html
+* doc\overview-tree.html
+* doc\package-list
+* doc\script.js
+* doc\serialized-form.html
+* doc\stylesheet.css
+* homework.key
+* ic_launcher-web.png
+* javadoc.xml
+* proguard-project.txt
+* readme
+From iapppay_res:
+* build.xml
+* iapppay_res.iml
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:23.4.0
+android-support-v7-appcompat.jar => com.android.support:appcompat-v7:23.4.0
+gson-2.2.3.jar => com.google.code.gson:gson:2.2.3
+
+Potentially Missing Dependency:
+-------------------------------
+When we replaced the following .jar files with a Gradle dependency, we
+inferred the dependency version number from the filename. This
+specific version may not actually be available from the repository.
+If you get a build error stating that the dependency is missing, edit
+the version number to for example "+" to pick up the latest version
+instead. (This may require you to update your code if the library APIs
+have changed.)
+
+gson-2.2.3.jar => version 2.2.3 in com.google.code.gson:gson:2.2.3
+
+Replaced Libraries with Dependencies:
+-------------------------------------
+The importer recognized the following library projects as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the source files in your project were of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the library replacement in the import wizard and try
+again:
+
+android-support-v7-appcompat => [com.android.support:appcompat-v7:23.4.0]
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In iapppay_res:
+* AndroidManifest.xml => iapppay_res\src\main\AndroidManifest.xml
+* assets\ => iapppay_res\src\main\assets
+* libs\iapppay_plugin.jar => iapppay_res\libs\iapppay_plugin.jar
+* res\ => iapppay_res\src\main\res\
+* src\ => iapppay_res\src\main\java
+In LearnProduct1:
+* AndroidManifest.xml => learnProduct1\src\main\AndroidManifest.xml
+* assets\ => learnProduct1\src\main\assets\
+* libs\android-support-v7-recyclerview.jar => learnProduct1\libs\android-support-v7-recyclerview.jar
+* libs\arm64-v8a\libjcore110.so => learnProduct1\src\main\jniLibs\arm64-v8a\libjcore110.so
+* libs\arm64-v8a\libtm_pay.so => learnProduct1\src\main\jniLibs\arm64-v8a\libtm_pay.so
+* libs\armeabi-v7a\libjcore110.so => learnProduct1\src\main\jniLibs\armeabi-v7a\libjcore110.so
+* libs\armeabi-v7a\libtm_pay.so => learnProduct1\src\main\jniLibs\armeabi-v7a\libtm_pay.so
+* libs\armeabi\libjcore110.so => learnProduct1\src\main\jniLibs\armeabi\libjcore110.so
+* libs\armeabi\libtm_pay.so => learnProduct1\src\main\jniLibs\armeabi\libtm_pay.so
+* libs\commons-io-2.3.jar => learnProduct1\libs\commons-io-2.3.jar
+* libs\jcore-android_v1.1.0.jar => learnProduct1\libs\jcore-android_v1.1.0.jar
+* libs\jpush-android_v3.0.1.jar => learnProduct1\libs\jpush-android_v3.0.1.jar
+* libs\mips64\libjcore110.so => learnProduct1\src\main\jniLibs\mips64\libjcore110.so
+* libs\mips64\libtm_pay.so => learnProduct1\src\main\jniLibs\mips64\libtm_pay.so
+* libs\mips\libjcore110.so => learnProduct1\src\main\jniLibs\mips\libjcore110.so
+* libs\mips\libtm_pay.so => learnProduct1\src\main\jniLibs\mips\libtm_pay.so
+* libs\MobCommons-2016.1107.1809.jar => learnProduct1\libs\MobCommons-2016.1107.1809.jar
+* libs\MobTools-2016.1107.1809.jar => learnProduct1\libs\MobTools-2016.1107.1809.jar
+* libs\okhttp-3.4.1.jar => learnProduct1\libs\okhttp-3.4.1.jar
+* libs\okhttputils-2_6_2.jar => learnProduct1\libs\okhttputils-2_6_2.jar
+* libs\okio-1.10.0.jar => learnProduct1\libs\okio-1.10.0.jar
+* libs\ShareSDK-Core-2.7.10.jar => learnProduct1\libs\ShareSDK-Core-2.7.10.jar
+* libs\ShareSDK-QQ-2.7.10.jar => learnProduct1\libs\ShareSDK-QQ-2.7.10.jar
+* libs\ShareSDK-SinaWeibo-2.7.10.jar => learnProduct1\libs\ShareSDK-SinaWeibo-2.7.10.jar
+* libs\ShareSDK-Wechat-2.7.10.jar => learnProduct1\libs\ShareSDK-Wechat-2.7.10.jar
+* libs\ShareSDK-Wechat-Core-2.7.10.jar => learnProduct1\libs\ShareSDK-Wechat-Core-2.7.10.jar
+* libs\ShareSDK-Wechat-Moments-2.7.10.jar => learnProduct1\libs\ShareSDK-Wechat-Moments-2.7.10.jar
+* libs\szf_sdk_1206_wx.jar => learnProduct1\libs\szf_sdk_1206_wx.jar
+* libs\umeng-analytics-v5.6.1.jar => learnProduct1\libs\umeng-analytics-v5.6.1.jar
+* libs\universal-image-loader-1.9.3.jar => learnProduct1\libs\universal-image-loader-1.9.3.jar
+* libs\x86\libjcore110.so => learnProduct1\src\main\jniLibs\x86\libjcore110.so
+* libs\x86\libtm_pay.so => learnProduct1\src\main\jniLibs\x86\libtm_pay.so
+* libs\x86_64\libjcore110.so => learnProduct1\src\main\jniLibs\x86_64\libjcore110.so
+* libs\x86_64\libtm_pay.so => learnProduct1\src\main\jniLibs\x86_64\libtm_pay.so
+* lint.xml => learnProduct1\lint.xml
+* res\ => learnProduct1\src\main\res\
+* src\ => learnProduct1\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

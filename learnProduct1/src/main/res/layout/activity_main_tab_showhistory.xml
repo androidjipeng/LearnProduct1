@@ -1,0 +1,33 @@
+<com.learn.soft.product.widget.InterceptLinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_gray_white_color"
+        android:orientation="vertical">
+
+    <com.learn.soft.product.widget.PagerSlidingTabTitle
+            android:id="@+id/psts_tab_showhistory_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_title_second"
+            app:pstsIndicatorColor="@color/bg_common_red_color"
+            app:pstsUnderlineColor="@color/bg_common_red_color"
+            app:pstsIndicatorHeight="2dp"
+            app:pstsUnderlineHeight="0dp"
+            app:pstsTabPaddingLeftRight="0dp"
+            app:pstsShouldExpand="true"
+            app:pstsTabTextSize="@dimen/h4"
+            app:pstsDividerColor="@color/black_light"
+            app:pstsSelectColor="@color/bg_common_red_color"
+            app:pstsDefaultColor="@color/indicator_default_title_color"
+            app:pstsTextAllCaps="false"
+            android:background="@color/bg_white_item" />
+
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/vp_show_tab_showhistory"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+</com.learn.soft.product.widget.InterceptLinearLayout>

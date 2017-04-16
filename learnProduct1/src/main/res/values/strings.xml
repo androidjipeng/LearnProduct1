@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">乐乐购</string>
+    <string name="main_bottom_title_1">首页</string>
+    <string name="main_bottom_title_2">所有商品</string>
+    <string name="main_bottom_title_3">最新揭晓</string>
+    <string name="main_bottom_title_4">晒单</string>
+    <string name="main_bottom_title_5">限时</string>
+    <string name="main_left_bottom_info"><u>如果您在平台遇到问题请及时联系客服</u></string>
+
+    <string name="click_fast_tip">点击速度太快了</string>
+    <string name="app_exit_tip">再一次操作退出应用</string>
+    <string name="no_network_tip">请连接网络后再尝试！</string>
+
+</resources>

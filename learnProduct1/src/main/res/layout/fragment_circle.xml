@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_title_bar" />
+
+    <include layout="@layout/layout_no_login" />
+
+
+
+    <com.learn.soft.product.widget.pulltorefresh.PullToRefreshScrollView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/refresh_view"
+        style="@style/PullToRefreshCommon"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrDrawable="@drawable/default_ptr_flip"
+        ptr:ptrHeaderTextAppearance="@style/TextWidgetPullAction"
+        ptr:ptrMode="pullFromStart"
+        ptr:ptrShowIndicator="false"
+        ptr:ptrSubHeaderTextAppearance="@style/TextWidgetPullAction" >
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:background="#f5f5f5"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <!--创建圈子-->
+            <RelativeLayout
+                android:id="@+id/rl_Createcircle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:padding="15dp" >
+                <ImageView
+                    android:id="@+id/img_creatcircle"
+                    android:src="@drawable/create"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_toRightOf="@+id/img_creatcircle"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/tv_Createcircle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="创建圈子"
+                    android:textColor="#212121"
+                    android:textSize="@dimen/h3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="3dp"
+                    android:drawableRight="@drawable/forward" />
+            </RelativeLayout>
+
+            <View
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:background="@color/cutline"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <!--加入圈子-->
+            <RelativeLayout
+                android:id="@+id/rl_join_circle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:padding="15dp" >
+                <ImageView
+                    android:id="@+id/img_join_circle"
+                    android:src="@drawable/in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_toRightOf="@+id/img_join_circle"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/tv_join_circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="加入圈子"
+                    android:textColor="#212121"
+                    android:textSize="@dimen/h3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="3dp"
+                    android:drawableRight="@drawable/forward" />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/rl_ibuilt_circles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f2f2f2"
+                android:paddingBottom="10dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="15dp" >
+                <TextView
+                    android:id="@+id/tvbackground"
+                    android:layout_width="3dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="wrap_content"
+                    android:background="#fd542e"/>
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tvbackground"
+                    android:id="@+id/tv_ibuilt_circles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我建的圈子"
+                    android:textColor="#212121"
+                    android:textSize="@dimen/h15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="3dp"
+                    android:drawableRight="@drawable/forward"
+                    android:text="更多"
+                    android:textColor="@color/more_color"
+                    android:textSize="@dimen/h4" />
+            </RelativeLayout>
+
+            <com.learn.soft.product.widget.MyGridView
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/mgv_ibuilt_circles"
+                style="@style/PullToRefreshCommon"
+                android:horizontalSpacing="0.5dip"
+                android:listSelector="@color/transparent"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="0.5dip" />
+
+            <RelativeLayout
+                android:id="@+id/rl_participate_circles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:background="#f2f2f2"
+                android:paddingBottom="10dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="10dp" >
+                <TextView
+                    android:id="@+id/tvbackground1"
+                    android:layout_width="3dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="wrap_content"
+                    android:background="#fd542e"/>
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tvbackground1"
+                    android:id="@+id/tv_participate_circles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="可参与的圈子"
+                    android:textColor="#212121"
+                    android:textSize="@dimen/h4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="3dp"
+                    android:drawableRight="@drawable/forward"
+                    android:text="更多"
+                    android:textColor="@color/more_color"
+                    android:textSize="@dimen/h15" />
+            </RelativeLayout>
+
+            <com.learn.soft.product.widget.MyGridView
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/mgv_participate_circles"
+                style="@style/PullToRefreshCommon"
+                android:horizontalSpacing="0.5dip"
+                android:listSelector="@color/transparent"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="0.5dip" />
+        </LinearLayout>
+    </com.learn.soft.product.widget.pulltorefresh.PullToRefreshScrollView>
+
+</LinearLayout>

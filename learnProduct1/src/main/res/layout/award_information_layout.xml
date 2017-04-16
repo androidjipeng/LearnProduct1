@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:layout_marginTop="@dimen/default_layout_padding_big"
+    android:layout_marginLeft="@dimen/default_layout_padding_medium"
+    android:layout_marginRight="@dimen/default_layout_padding_medium"
+    android:layout_marginBottom="@dimen/default_layout_padding_big"
+    android:visibility="gone"
+    android:id="@+id/rl_award_information"
+    android:background="@drawable/white_corners">
+    <FrameLayout
+        android:id="@+id/ll_userimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="@dimen/default_layout_padding_medium"
+            android:layout_marginLeft="@dimen/default_layout_padding_medium"
+            android:layout_marginRight="@dimen/default_layout_padding_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/img_award_user"
+                android:src="@drawable/ic_user_head"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+        </LinearLayout>
+        <ImageView
+            android:src="@drawable/label_before"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/default_layout_padding_medium"
+        android:layout_toRightOf="@+id/ll_userimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/award_name"
+            android:textSize="@dimen/default_textview_medium"
+            android:text="姓名"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="@dimen/default_textview_medium"
+                android:text="总共乐乐购："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/buy_shop_times"
+                android:textSize="@dimen/default_textview_medium"
+                android:text="2次"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="@dimen/default_textview_medium"
+                android:text="幸运乐乐购码："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/luck_lelegou_code"
+                android:textSize="@dimen/default_textview_medium"
+                android:text="78574584"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="@dimen/default_textview_medium"
+                android:text="揭晓时间："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/open_award_time"
+                android:textSize="@dimen/default_textview_medium"
+                android:text="2017.03.15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="@dimen/default_textview_medium"
+                android:text="乐乐购时间："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/buy_lelegou_time"
+                android:textSize="@dimen/default_textview_medium"
+                android:text="2017.03.05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="@dimen/default_layout_padding_medium"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:src="@drawable/forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

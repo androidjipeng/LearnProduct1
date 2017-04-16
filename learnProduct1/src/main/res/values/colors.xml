@@ -1,0 +1,155 @@
+<resources>
+
+
+    <color name="ltgray">#FFCCCCCC</color>
+
+    <color name="color1">#ff0f9d58</color>
+    <color name="color2">#ffdb4437</color>
+    <color name="color3">#ff4285f4</color>
+    <color name="color4">#fff4b400</color>
+
+
+    <color name="sr_window_background">#FFFEFEFE</color>
+    <color name="view_focused">#11000000</color>
+    <color name="head_bg">#fcfcfc</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#999999</color>
+    <color name="gray2">#9996a0</color>
+    <color name="red">#FF0000</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent1">#11000000</color>
+    <color name="transparent3">#33000000</color>
+    <color name="transparent5">#50000000</color>
+    <color name="transparent6">#66000000</color>
+    <color name="head_title">#474747</color>
+    <color name="head_background">#f7f7f7</color>
+    <color name="divider_color">#d4d4d4</color>
+    <color name="divider_color2">#bbbbbb</color>
+    <color name="gray_white_color">#eaeaea</color>
+    <color name="white_color">#ffffffff</color>
+    <color name="game_middle_layout_bg_color">#fff7f8fa</color>
+    <color name="game_middle_text_color">#ff666769</color>
+
+
+    <color name="parse_first">#b98cf0</color>
+    <color name="blue_main">#22aaff</color>
+    <color name="blue_item_show">#49b5fe</color>
+    <color name="bg_white_main_divider">#b9c4e2</color>
+
+    <color name="main_head_title_default">#333333</color>
+    <color name="main_head_title_select">#666666</color>
+    <color name="tab_indecator">#a2dffe</color>
+
+    <color name="bg_white_main">#f8f8f8</color>
+    <color name="grid_bg">#FFFFFFFF</color>
+    <color name="grid_border">#FFC6C6C6</color>
+
+    <color name="bg_common_black">#3a3e40</color>
+    <color name="bg_et_black">#343438</color>
+
+    <!-- 白天模式颜色 -->
+    <color name="bg_white_default_day">@color/bg_white_main</color>
+
+    <!-- 夜间模式颜色  -->
+    <color name="bg_black_default_night">#666666</color>
+
+    <color name="light_gray">#d7d7d7</color>
+    <color name="divider_gray">#fff3efec</color>
+    <color name="divider_gray2">#f4f4f4</color>
+    <color name="bg_item_default">#e4e4e4</color>
+
+
+    <color name="edit_dlg_hint_color">#d1d1d1</color>
+    <color name="edit_hint_color">#d4d4d4</color>
+    <color name="black_light">#3c3d41</color>
+    <color name="black_dlg">#82818a</color>
+
+    <color name="yellow">#f8801b</color>
+    <color name="yellow_bg">#f9c497</color>
+
+
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+    <color name="translucence">#506050</color>
+    <color name="bg_gray">#e2e2e2</color>
+    <color name="font_gray_show">#c1c1c1</color>
+    <color name="bg_grayd3">#d3d3d3</color>
+    <color name="green">#65e17b</color>
+
+
+    <color name="bg_common_red_dark">#ff6666</color>
+    <color name="bg_common_red_color_first">#ff6600</color>
+    <color name="bg_common_red_color">#ff4630</color>
+    <color name="bg_common_title_color">#f6f6f6</color>
+    <color name="bg_common_red_press_color">#ff5252</color>
+    <color name="tag_list_item_unselect_color">#ff666666</color>
+    <color name="tag_list_item_select_color">#ffec6b51</color>
+    <color name="tab_color_default">#767676</color>
+    <color name="tab_color_select">@color/bg_common_red_color</color>
+    <color name="bg_gray_color">#ebe9e7</color>
+    <color name="bg_gray_white_color">#eeeeee</color>
+    <color name="bg_white_item">#fefefe</color>
+    <color name="dark_red_color">#ffc2185b</color>
+    <color name="gray_red_color">#faf4f1</color>
+    <color name="black_color">#ff000000</color>
+    <color name="index_head_black">#5B5B5B</color>
+    <color name="index_head_dian">#b7b7b7</color>
+    <color name="black_common_color">#5e5e5e</color>
+    <color name="black_light_color">#a9a6a6</color>
+    <color name="my_tab_gray">#9f9e9e</color>
+    <color name="my_tab_yellow">#f6de17</color>
+    <color name="black_head_my">#2f2e2e</color>
+
+    <color name="dlg_red_title_color">#ff4630</color>
+    <color name="indicator_red_title_color">#e4464f</color>
+    <color name="indicator_default_title_color">@color/black_common_color</color>
+    <color name="login_black_color">#5c5c5c</color>
+    <color name="time_gray_color">#c5c5c4</color>
+    <color name="register_gray_color">#c2c2c2</color>
+    <color name="register_green_color">#2dcb9d</color>
+    <color name="systemmsg_black_color">#232323</color>
+    <color name="problem_black_color">#212121</color>
+    <color name="systemmsg_gray_color">#aaaaaa</color>
+    <color name="person_info_color">#3c3c3c</color>
+    <color name="product_info_color">#757575</color>
+    <color name="gray_info_color">#b2b2b2</color>
+    <color name="black_info_color">#373636</color>
+    <color name="navpage">#FFE1E8EB</color>
+
+    <color name="uvv_gray">#969696</color>
+    <color name="uvv_black">#ff000000</color>
+    <color name="uvv_light_gray">#ffF0F0F0</color>
+    <color name="uvv_titlebar_bg">#7f000000</color>
+
+
+
+    <color name="colorPrimary">#607d8b</color>
+    <color name="colorPrimaryDark">#455a64</color>
+    <color name="colorPrimaryLight">#cfd8dc</color>
+    <color name="colorAccent">#ff6600</color>
+
+    <color name="gray_dark">#616161</color>
+    <color name="gray_light">#9e9e9e</color>
+    <color name="brown">#5d4037</color>
+
+    <color name="indicator_1">#55B3C2</color>
+    <color name="indicator_2">#64A4A4</color>
+    <color name="indicator_3">#66D7B9</color>
+    <color name="indicator_4">#FDBC7D</color>
+
+
+    <color name="si_default_text_color">#FF0000</color>
+    <color name="si_default_text_color_selected">#FF00FF</color>
+    <color name="si_default_indicator_bg">#ee9999</color>
+
+    <color name="more_color">#ff472f</color>
+    <color name="tv_write">#ffffff</color>
+
+    <drawable name="default_now_lelegou_red">#ff4630</drawable>
+    <drawable name="pressdown_now_lelegou_gray">#b2b2b2</drawable>
+    <drawable name="default_add_cart_red">#ffb320</drawable>
+
+</resources>

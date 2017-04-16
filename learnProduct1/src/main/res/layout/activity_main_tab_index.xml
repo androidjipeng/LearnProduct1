@@ -1,0 +1,463 @@
+<com.learn.soft.product.widget.InterceptLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray_white_color"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_title_bar" />
+
+    <com.learn.soft.product.widget.pulltorefresh.PullToRefreshScrollView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/psv_common_tab_my_show"
+        style="@style/PullToRefreshCommon"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrDrawable="@drawable/default_ptr_flip"
+        ptr:ptrHeaderTextAppearance="@style/TextWidgetPullAction"
+        ptr:ptrMode="pullFromStart"
+        ptr:ptrShowIndicator="false"
+        ptr:ptrSubHeaderTextAppearance="@style/TextWidgetPullAction" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@+id/area_head_buy_content"
+                android:layout_width="fill_parent"
+                android:layout_height="160dip"
+                android:orientation="vertical" >
+
+                <com.learn.soft.product.widget.adview.AdViewFlow
+                    android:id="@+id/avf_tab_buy_head"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@color/transparent"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/h4" />
+
+                    <com.learn.soft.product.widget.adview.CircleFlowIndicator
+                        android:id="@+id/cfi_tab_buy_head"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:padding="2dip"
+                        android:visibility="gone"
+                        app:activeColor="@color/bg_common_red_color"
+                        app:activeType="fill"
+                        app:circleSeparation="20dip"
+                        app:inactiveColor="@color/white"
+                        app:inactiveType="fill"
+                        app:radius="4dip" />
+                </FrameLayout>
+            </FrameLayout>
+
+            <!-- 新增 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingTop="24dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="11dp"
+                    android:drawableTop="@drawable/ic_home_all_product"
+                    android:gravity="center"
+                    android:text="所有商品"
+                    android:textColor="@color/gray"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="11dp"
+                    android:drawableTop="@drawable/ic_home_circle"
+                    android:gravity="center"
+                    android:text="圈中宝"
+                    android:textColor="@color/gray"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="11dp"
+                    android:drawableTop="@drawable/ic_home_new"
+                    android:gravity="center"
+                    android:text="最新揭晓"
+                    android:textColor="@color/gray"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="11dp"
+                    android:drawableTop="@drawable/ic_home_shaidan"
+                    android:gravity="center"
+                    android:text="晒单"
+                    android:textColor="@color/gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_notice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="16dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_notice"
+                    android:drawablePadding="5dp"
+                    android:singleLine="true"
+                    android:text="恭喜"
+                    android:textColor="@color/gray"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/blue_main"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/gray"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/btn_show_go_newsinfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:drawableRight="@drawable/ic_triangle"
+                    android:text="最新揭晓"
+                    android:textColor="@color/bg_common_red_color"
+                    android:textSize="@dimen/h4" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_corners"
+                    android:padding="1dp" >
+
+                    <com.learn.soft.product.widget.MyGridView
+                        android:id="@+id/mgv_tab_buy_first"
+                        style="@style/PullToRefreshCommon"
+                        android:horizontalSpacing="0.5dip"
+                        android:listSelector="@color/transparent"
+                        android:numColumns="2"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="0.5dip" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:id="@+id/btn_show_go_todaylimit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="今日限时"
+                        android:textColor="@color/bg_common_red_color"
+                        android:textSize="@dimen/h4" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=" 每天10点、15点、22点准时揭晓"
+                        android:textColor="@color/black_light_color"
+                        android:textSize="@dimen/h6" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_triangle"
+                        android:text="今日限时"
+                        android:textColor="@color/black_light"
+                        android:textSize="@dimen/h5" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_corners"
+                    android:padding="1dp" >
+
+                    <LinearLayout
+                        android:id="@+id/area_show_content_timelimit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <FrameLayout
+                            android:id="@+id/area_index_send_head_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone" >
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_gravity="center"
+                                android:background="@color/divider_gray" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:orientation="horizontal"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp" >
+
+                                <LinearLayout style="@style/main_tab_index_time_area_style" >
+
+                                    <ImageView
+                                        android:id="@+id/iv_tab_show_title1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_data_red_down_arrow" />
+                                </LinearLayout>
+
+                                <LinearLayout style="@style/main_tab_index_time_area_style" >
+
+                                    <ImageView
+                                        android:id="@+id/iv_tab_show_title2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_data_red_down_arrow"
+                                        android:visibility="invisible" />
+                                </LinearLayout>
+
+                                <LinearLayout style="@style/main_tab_index_time_area_style" >
+
+                                    <ImageView
+                                        android:id="@+id/iv_tab_show_title3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_data_red_down_arrow"
+                                        android:visibility="invisible" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp" >
+
+                                <LinearLayout style="@style/main_tab_index_time_area_style" >
+
+                                    <TextView
+                                        android:id="@+id/tv_tab_show_title1"
+                                        style="@style/main_tab_index_time_tv_style"
+                                        android:background="@drawable/bg_tab_title_circle_corners"
+                                        android:text="10点"
+                                        android:textColor="@color/white" />
+                                </LinearLayout>
+
+                                <LinearLayout style="@style/main_tab_index_time_area_style" >
+
+                                    <TextView
+                                        android:id="@+id/tv_tab_show_title2"
+                                        style="@style/main_tab_index_time_tv_style"
+                                        android:text="15点" />
+                                </LinearLayout>
+
+                                <LinearLayout style="@style/main_tab_index_time_area_style" >
+
+                                    <TextView
+                                        android:id="@+id/tv_tab_show_title3"
+                                        style="@style/main_tab_index_time_tv_style"
+                                        android:text="22点" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/vp_show_tab_timelimit"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:background="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/area_tab_buy_second_empty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp" >
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/ic_no_data_empty" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="抱歉，今日没有发布限时揭晓商品！"
+                            android:textColor="@color/black_light" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/btn_show_go_allproduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:drawableRight="@drawable/ic_triangle"
+                    android:text="热门推荐"
+                    android:textColor="@color/bg_common_red_color"
+                    android:textSize="@dimen/h4" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_corners"
+                    android:padding="1dp" >
+
+                    <com.learn.soft.product.widget.MyGridView
+                        android:id="@+id/mgv_tab_buy_third"
+                        style="@style/PullToRefreshCommon"
+                        android:horizontalSpacing="0.5dip"
+                        android:listSelector="@color/transparent"
+                        android:numColumns="2"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="0.5dip" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/btn_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:drawableRight="@drawable/ic_triangle"
+                    android:text="两人专区"
+                    android:textColor="@color/bg_common_red_color"
+                    android:textSize="@dimen/h4" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_corners"
+                    android:padding="1dp" >
+
+                    <com.learn.soft.product.widget.MyGridView
+                        android:id="@+id/mgv_two"
+                        style="@style/PullToRefreshCommon"
+                        android:horizontalSpacing="0.5dip"
+                        android:listSelector="@color/transparent"
+                        android:numColumns="2"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="0.5dip" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/btn_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:drawableRight="@drawable/ic_triangle"
+                    android:text="三人专区"
+                    android:textColor="@color/bg_common_red_color"
+                    android:textSize="@dimen/h4" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_corners"
+                    android:padding="1dp" >
+
+                    <com.learn.soft.product.widget.MyGridView
+                        android:id="@+id/mgv_three"
+                        style="@style/PullToRefreshCommon"
+                        android:horizontalSpacing="0.5dip"
+                        android:listSelector="@color/transparent"
+                        android:numColumns="2"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="0.5dip" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.learn.soft.product.widget.pulltorefresh.PullToRefreshScrollView>
+
+</com.learn.soft.product.widget.InterceptLinearLayout>
