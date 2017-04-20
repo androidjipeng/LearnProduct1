@@ -6,9 +6,9 @@ package com.wangyi.lelegou.maofengqi.ui.activity.ShoppingflowActivity;
 
 public class Config {
     /**测试地址*/
-    public static final String testurl="http://60.205.148.81:8082/yyg_app/";
+//    public static final String testurl="http://60.205.148.81:8082/yyg_app/";
     /**正式的地址*/
-//    public static final String testurl="http://app.91lelegou.com/";
+    public static final String testurl="http://app.91lelegou.com/";
 
 
     /**商品详情*/
@@ -32,9 +32,9 @@ public class Config {
     public static final String doAliPayCircle="doAliPayCircle";
 
     //==========================================================
-    public static final String ledoupay="http://101.201.115.226:8011/index.php/v1/pay/balance_pay";//乐豆
+    public static final String ledoupay="http://91lelegou.com/index.php/v1/pay/balance_pay";//乐豆
 
-    public static final String ordercode="http://101.201.115.226:8011/index.php/v1/pay/payment";//ordercode
+    public static final String ordercode="http://91lelegou.com/index.php/v1/pay/payment";//ordercode
 
     //==========================================================
 

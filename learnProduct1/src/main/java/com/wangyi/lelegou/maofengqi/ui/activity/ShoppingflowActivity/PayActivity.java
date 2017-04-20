@@ -283,6 +283,7 @@ public class PayActivity extends BaseActivity implements View.OnClickListener {
                         .addParams("type","1")
                         .addParams("uid", JiaZhengApp.getInstance().getUserId())
                         .addParams("shoplist", shopidss)
+                        .addParams("deviceInfo", GetDeviceInformaton.deviceInfo())
                         .build()
                         .execute(new StringCallback() {
                             @Override
@@ -300,8 +301,12 @@ public class PayActivity extends BaseActivity implements View.OnClickListener {
                                     String result = object.getString("result");
                                     if (result.equals("0"))
                                     {
+                                        ToastHelper.toast("支付成功");
                                         Intent intent=new Intent(context, MainActivity.class);
                                         startActivity(intent);
+                                    }else
+                                    {
+                                        ToastHelper.toast("支付失败");
                                     }
                                 } catch (JSONException e) {
                                     e.printStackTrace();
@@ -322,6 +327,7 @@ public class PayActivity extends BaseActivity implements View.OnClickListener {
                         .addParams("uid", JiaZhengApp.getInstance().getUserId())
                         .addParams("circle_id", circleid)
                         .addParams("money",payMoneyModel.getTotalMoney()+"")
+                        .addParams("deviceInfo", GetDeviceInformaton.deviceInfo())
                         .build()
                         .execute(new StringCallback() {
                             @Override
@@ -339,8 +345,12 @@ public class PayActivity extends BaseActivity implements View.OnClickListener {
                                     String result = object.getString("result");
                                     if (result.equals("0"))
                                     {
+                                        ToastHelper.toast("支付成功");
                                         Intent intent=new Intent(context, MainActivity.class);
                                         startActivity(intent);
+                                    }else
+                                    {
+                                        ToastHelper.toast("支付失败");
                                     }
                                 } catch (JSONException e) {
                                     e.printStackTrace();
@@ -359,6 +369,7 @@ public class PayActivity extends BaseActivity implements View.OnClickListener {
                         .addParams("uid", JiaZhengApp.getInstance().getUserId())
                         .addParams("shopid", shopid)
                         .addParams("money",payMoneyModel.getTotalMoney()+"")
+                        .addParams("deviceInfo", GetDeviceInformaton.deviceInfo())
                         .build()
                         .execute(new StringCallback() {
                             @Override
@@ -375,9 +386,12 @@ public class PayActivity extends BaseActivity implements View.OnClickListener {
                                     JSONObject object=new JSONObject(s);
                                     String result = object.getString("result");
                                     if (result.equals("0"))
-                                    {
+                                    {   ToastHelper.toast("支付成功");
                                         Intent intent=new Intent(context, MainActivity.class);
                                         startActivity(intent);
+                                    }else
+                                    {
+                                        ToastHelper.toast("支付失败");
                                     }
                                 } catch (JSONException e) {
                                     e.printStackTrace();
@@ -766,6 +780,7 @@ public class PayActivity extends BaseActivity implements View.OnClickListener {
                             {
                                 Intent intent=new Intent(context, MainActivity.class);
                                 startActivity(intent);
+                                finish();
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();

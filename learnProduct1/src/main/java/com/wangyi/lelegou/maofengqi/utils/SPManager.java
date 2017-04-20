@@ -47,17 +47,17 @@ public class SPManager {
 		return mInstance;
 	}
 
-	// 设置是否是第一次激活
-	public static void setActivationApp(boolean isActivationApp) {
-		SharedPreferences.Editor editor = preferences.edit();
-		editor.putBoolean("isActivationApp", isActivationApp);
-		editor.commit();
-	}
+//	// 设置是否是第一次激活
+//	public static void setActivationApp(boolean isActivationApp) {
+//		SharedPreferences.Editor editor = preferences.edit();
+//		editor.putBoolean("isActivationApp", isActivationApp);
+//		editor.commit();
+//	}
 
-	// 师傅是第一次激活
-	public static boolean isActivationApp() {
-		return preferences.getBoolean("isActivationApp", false);
-	}
+//	// 师傅是第一次激活
+//	public static boolean isActivationApp() {
+//		return preferences.getBoolean("isActivationApp", false);
+//	}
 
 	// 设置是否删除了Cookies
 	public static void setRemoveCookie(boolean isRemoveCookie) {

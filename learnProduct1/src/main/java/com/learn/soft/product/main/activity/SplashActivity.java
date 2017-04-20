@@ -138,14 +138,14 @@ public class SplashActivity extends BaseActivity implements
 			SPManager.setRemoveCookie(true);
 		}
 
-		if (!SPManager.isActivationApp()) {
-			Map<String, Object> paramsMap = new HashMap<String, Object>();
-			// 添加渠道
-			paramsMap.put("channel", Constant.CHANNEL);
-			ApiClass.activationApp(paramsMap, callback);
-		} else {
+//		if (!SPManager.isActivationApp()) {
+//			Map<String, Object> paramsMap = new HashMap<String, Object>();
+//			// 添加渠道
+//			paramsMap.put("channel", Constant.CHANNEL);
+//			ApiClass.activationApp(paramsMap, callback);
+//		} else {
 			handler.sendEmptyMessageDelayed(1, 3000);
-		}
+//		}
 
 //		AlphaAnimation aa = new AlphaAnimation(0.3f, 1.0f);
 //		aa.setDuration(100);
@@ -172,26 +172,26 @@ public class SplashActivity extends BaseActivity implements
 //		});
 	}
 
-	private ResultCallback<String> callback = new ResultCallback<String>() {
-
-		@Override
-		public void onSuccess(ResultBean<String> resultBean, int id) {
-			// dismissProgress();
-			if (resultBean.getStatus() == 1) {
-				SPManager.setActivationApp(true);
-				handler.sendEmptyMessageDelayed(1, 2000);
-			} else {
-				Toast.makeText(SplashActivity.this, resultBean.getInfo(),
-						Toast.LENGTH_SHORT).show();
-				finish();
-			}
-		}
-
-		public void onError(okhttp3.Call call, Exception e, int id) {
-			super.onError(call, e, id);
-			dismissProgress();
-		}
-	};
+//	private ResultCallback<String> callback = new ResultCallback<String>() {
+//
+//		@Override
+//		public void onSuccess(ResultBean<String> resultBean, int id) {
+//			// dismissProgress();
+//			if (resultBean.getStatus() == 1) {
+//				SPManager.setActivationApp(true);
+//				handler.sendEmptyMessageDelayed(1, 2000);
+//			} else {
+//				Toast.makeText(SplashActivity.this, resultBean.getInfo(),
+//						Toast.LENGTH_SHORT).show();
+//				finish();
+//			}
+//		}
+//
+//		public void onError(okhttp3.Call call, Exception e, int id) {
+//			super.onError(call, e, id);
+//			dismissProgress();
+//		}
+//	};
 	
 	private Handler handler=new Handler(){
 		public void handleMessage(android.os.Message msg) {

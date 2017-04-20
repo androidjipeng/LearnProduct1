@@ -841,6 +841,7 @@ public class BalanceActivity extends BaseActivity implements View.OnClickListene
                                 ToastHelper.toast("提交成功");
                                 Intent intent=new Intent(context, MainActivity.class);
                                 startActivity(intent);
+                                finish();
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();

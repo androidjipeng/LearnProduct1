@@ -46,6 +46,7 @@ import com.learn.soft.product.util.StringUtil;
 import com.learn.soft.product1.R;
 import com.wangyi.lelegou.maofengqi.base.BaseActivity;
 import com.wangyi.lelegou.maofengqi.bean.HistoryRecordBean;
+import com.wangyi.lelegou.maofengqi.ui.activity.ShoppingflowActivity.CartActivity;
 import com.wangyi.lelegou.maofengqi.ui.fragment.ProductListFragment;
 import com.wangyi.lelegou.maofengqi.utils.SPManager;
 import com.wangyi.lelegou.maofengqi.view.adapter.CommonAdapter;
@@ -183,11 +184,14 @@ public class SearchProductActivity extends BaseActivity implements
 			break;
 		case R.id.area_show_buy_content:
 			MyLog.e("jp","--------------->area_show_buy_content");
-			StringBuffer sb = new StringBuffer();
-			sb.append(ApiWebCommon.API_COMMON.Api_Common_Url);
-			sb.append(ApiWebCommon.API_COMMON.Web_Index_Cart_List);
-			String url = sb.toString();
-			setCommonWebViewShow("", url);
+//			StringBuffer sb = new StringBuffer();
+//			sb.append(ApiWebCommon.API_COMMON.Api_Common_Url);
+//			sb.append(ApiWebCommon.API_COMMON.Web_Index_Cart_List);
+//			String url = sb.toString();
+//			setCommonWebViewShow("", url);
+			Intent cartintent=new Intent(mActivity, CartActivity.class);
+			startActivity(cartintent);
+			finish();
 			break;
 		case R.id.tv_clear:
 			list.clear();

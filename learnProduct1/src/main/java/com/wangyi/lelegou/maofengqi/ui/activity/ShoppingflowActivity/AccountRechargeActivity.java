@@ -383,7 +383,7 @@ public class AccountRechargeActivity extends BaseActivity implements View.OnClic
                             String result = object.getString("result");
                             if (result.equals("0"))
                             {
-                                ActivityFrgManager.getInstance().finishActivities();
+                                finish();
                             }
                         } catch (JSONException e) {
                             e.printStackTrace();
